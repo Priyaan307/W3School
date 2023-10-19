@@ -47,3 +47,43 @@
 //       return a * b;
 //     }
 //     console.log(myFunction(5, 5)); // Output: 25
+
+// Self-Invoking Functions: --------------------------------------------------------------------
+// (function () {
+//     console.log("Hello! I called myself");
+//   })(); // Output : Hello! I called myself
+
+// Functions Can Be Used as Values :------------------------------------------------------------
+
+// function Mul(a,b) {
+//   return a * b;
+// }
+// let x= Mul(3,4);
+// console.log(x);
+
+// The arguments.length property returns the number of arguments received by the function: ------
+
+// function Mul(a,b,c) {
+//     return arguments.length;
+//   }
+//   let x= Mul(3,4,2);
+//   console.log(x);
+
+// The toString() method returns the function as a string:---------------------------------------
+
+// function myFunction(a, b) {
+//   return a * b;
+// }
+// let text = myFunction.toString();
+// console.log(text); // Output: function myFunction(a, b) { return a * b; }
+
+/* A function defined as the property of an object, is called a method to the object.
+A function designed to create new objects, is called an object constructor. */
+
+/*-------------------------------Arrow Functions-----------------------------------*/
+
+// ES6
+// // const x = (x, y) => x * y;
+// const x = (x, y) => { return x * y };
+// console.log(x(3,2)); // 6
+
